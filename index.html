@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones Fandom</title>
+    <!-- cdn.jsdelivr.net untuk penggunaan icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <label class="dark" id="darkmode"></label>
+    <script src="main.js"></script>
+    <header>
+        <section class="navigation">
+            <div class="container">
+                <div class="box-navigation">
+                    <div class="box">
+                        <h1>GAME OF THRONES</h1>
+                    </div>
+                    <div class="box">
+                        <ul>
+                            <li><a href="#page1">Home</a></li>
+                            <li><a href="#page2">Character</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <img src="asset/moon.png" id="icon">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <section id="page1">
+        <div id="left">
+
+            <div id="textcenter">
+                <h1>Welcome to</h1>
+                <h2>Game of Thrones Fandom</h2>
+                <p>This site shows everything about Game Of Thrones TV Series of HBO, containing characters, houses and family tree.</p>
+
+                <a href="#">Read more..</a>
+            </div>
+        </div>
+        <div id="right">
+            <div id="rtop">
+                <div id="rtopleft"></div>
+                <div id="rtopright"></div>
+            </div>
+            <div id="rbottom"></div>
+        </div>
+    </section>
+
+    <section id="page2">
+        <div class="char">
+            <figure>
+                <img src="asset/001_Aerys_II_Targaryen.jpg" alt="">
+                <figcaption>
+                    <b>Aerys II Targaryen</b><br>
+                    <a>House Targaryen</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="char">
+            <figure>
+                <img src="asset/002_Eddard_Stark.jpg" alt="">
+                <figcaption>
+                    <b>(Ned) Eddard Stark</b>
+                    <a>House Stark</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="char">
+            <figure>
+                <img src="asset/003_Tywin_Lannister.jpg" alt="">
+                <figcaption>
+                    <b>Tywin Lannister</b>
+                    <a>House Lannister</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="char">
+            <figure>
+                <img src="asset/004_Robert_Baratheon.png" alt="">
+                <figcaption>
+                    <b>Robert I Baratheon</b>
+                    <a>House Baratheon</a>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="page3">
+        <div class="aboutme">
+            <div class="img">
+                <img src="asset/Foto_Author.jpg" alt="" srcset="">
+            </div>
+            <div class="text">
+                <h1>ABOUT ME</h1>
+                <p>
+                    Bramantyo Ardi Harimurti Wibisono,<br>
+                    Program Studi Informatika 2021 Universitas Mulawarman</br>
+                    Mahasiswa Semester 3 Yang Belum Bisa Melakukan Manajemen Waktu.</br>
+                </p>
+                <div class="button">
+                    <a href="#" class="btn btn1">More in Me</a>
+                    <a href="https://drive.google.com/file/d/1yJLWUIasqnSiW2fCcHR1tzTU7oh1-Szp/view?usp=sharing" 
+                    class="btn btn2">See my CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var icon = document.getElementById("icon");
+    
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+        } 
+    </script>
+
+    <footer>
+        &copy; MasBram 2022
+    </footer>
+</body>
+</html>
